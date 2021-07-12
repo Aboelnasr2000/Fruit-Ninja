@@ -140,18 +140,18 @@ public class levelEasy implements Level {
     }
 
     public void objectMotion(GameObject go, int i) {
-        if (flag[i] == true || flag1[i] == true) {
+        if (flag[i] || flag1[i]) {
             go.setDeltaY(go.getDownY());
         } else if (go.getPosY() <= 30) {
             flag[i] = true;
         }
-        if (flag1[i] == false) {
+        if (!flag1[i]) {
             actions.updateObjectPlace(go);
             factory.drawObject(go);
-        } else if (flag1[i] == true) {
+        } else if (flag1[i]) {
             if (go.getObjectType() == fruit.BANANA || go.getObjectType() == fruit.MELON
                     || go.getObjectType() == fruit.APPLE || go.getObjectType() == fruit.SUPERFRUIT || go.getObjectType()==fruit.ORANGE) {
-                if (flag2[i] == false) {
+                if (!flag2[i]) {
                     factory.swordSound();
                     score = factory.setScore((Fruit) go, score);
                     flag2[i] = true;
@@ -160,7 +160,7 @@ public class levelEasy implements Level {
                 factory.drawHalf((Fruit) go);
             }
             if (go.getObjectType() == bomb.NORM) {
-                if (flag2[i] == false) {
+                if (!flag2[i]) {
                     factory.bombSound();
                     lives--;
                     go.setPosY(563);
@@ -174,7 +174,7 @@ public class levelEasy implements Level {
                 lives = 0;
             }
             if (go.getObjectType() == fruit.MAGICFRUIT) {
-                if (flag2[i] == false) {
+                if (!flag2[i]) {
                     flag2[i] = true;
                     if (this.gameObject.getObjectType() != bomb.DEADLY && this.gameObject.getObjectType() != bomb.NORM) {
                         flag1[0] = true;
@@ -190,7 +190,7 @@ public class levelEasy implements Level {
                 factory.drawHalf((Fruit) go);
             }
             if (go.getObjectType() == fruit.LIFEFRUIT) {
-                if (flag2[i] == false) {
+                if (!flag2[i]) {
                     flag2[i] = true;
                     if (lives < 3) {
                         lives++;
@@ -204,7 +204,7 @@ public class levelEasy implements Level {
 
     public GameObject checkEnd(GameObject go, int i) throws ParserConfigurationException, IOException, SAXException {
         if (go.getPosY() > 562) {
-            if (flag1[i] == false && (go.getObjectType() == fruit.APPLE || go.getObjectType() == fruit.BANANA
+            if (!flag1[i] && (go.getObjectType() == fruit.APPLE || go.getObjectType() == fruit.BANANA
                     || go.getObjectType() == fruit.MELON || go.getObjectType() == fruit.ORANGE))
             {
                 lives--;

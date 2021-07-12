@@ -14,8 +14,6 @@ public class fruitNinja extends Application{
 
     @Override
     public void start(Stage stage) throws Exception {
-
-
         stage.setTitle("Fruit Ninja");
         Canvas canvas = new Canvas(1000, 562);
         Group root = new Group();

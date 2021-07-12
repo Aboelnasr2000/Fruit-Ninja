@@ -76,7 +76,7 @@ public class Factory {
         this.nuclearString = new File("Nuclear.mp3").toURI().toString();
         this.bombString = new File("Regular.mp3").toURI().toString();
         this.lifelostString = new File("beep.mp3").toURI().toString();
-        this.congratsString = new File("Wn.mp3").toURI().toString();
+        this.congratsString = new File("Win.mp3").toURI().toString();
         this.loserString = new File("Lose.wav").toURI().toString();
         this.player = new MediaPlayer(new Media(themeString));
         this.graphicsContext = graphicsContext;
