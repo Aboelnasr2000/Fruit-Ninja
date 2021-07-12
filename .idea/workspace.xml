@@ -241,9 +241,13 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="283" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1625499784500" />
-    <state x="191" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1625498987454">
+    <state x="191" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1626132461089">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="191" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1625498987454" />
+    <state x="191" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1626132461089" />
+    <state x="769" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1626132471554">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="769" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1626132471554" />
   </component>
 </project>
